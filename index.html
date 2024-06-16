@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: rgb(177, 224, 224);">
+   
+    <div class="container">
+        <h1 class="text-center">Weather App</h1>
+        <form id="location-form" class="mt-4">
+            <div class="form-floating mb-4 custom-input-width" style="margin-bottom: 20px;">
+                <input type="text" id="location" class="form-control" style="color: #6c757d; opacity: 0.6;" placeholder="Enter Location" required>
+                <label for="location" style="display: none;">Enter Location</label>
+            
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Get Weather</button>
+        </form>
+        <div id="loading" class="text-center mt-4" style="display:none;">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div id="weather-info" class="mt-4 text-center weather-info-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
